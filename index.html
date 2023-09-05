@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>Blogger</title>
+</head>
+<body>
+    
+
+<header class="bg-black-500 py-4 headers">
+    <div class="container mx-auto flex justify-between items-center">
+        <a href="/" class="text-3xl font-extrabold text-white hover:text-gray-300 transition duration-300">Blogger <i class="fa-solid fa-blog"></i></a>
+
+        <nav>
+            <ul class="flex space-x-4">
+                <li><a href="/" class="text-white hover:text-gray-300 transition duration-300">Home</a></li>
+                <li><a href="/about.html" class="text-white hover:text-gray-300 transition duration-300">About</a></li>
+                <li><a href="/contact.html" class="text-white hover:text-gray-300 transition duration-300">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="relative h-96">
+    <img src="https://pixelunion.net/cdn/shop/articles/hero_blog_image_1200x672.jpg?v=1564587108" alt="Hero Image" class="object-cover w-full h-full absolute inset-0 z-0">
+
+    <div class="bg-black bg-opacity-50 absolute inset-0 z-10 flex justify-center items-center">
+        <div class="container mx-auto text-center text-white relative z-20">
+            <h1 class="text-4xl font-extrabold mb-4">Welcome to My Blog</h1>
+            <p class="text-lg text-gray-300 mb-6 font-bold">Explore the latest articles and insights. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero et minima animi obcaecati! Saepe, quo quasi velit quis quia aspernatur. Incidunt, illum. Et libero magnam beatae quidem tempore ipsa odio!</p>
+
+            <!-- Read More Button with Collapse Effect -->
+            <div id="read-more-content" class="overflow-hidden font-bold transition-max-height duration-500 ease-in-out">
+                <p class="text-gray-300 mb-6">
+                    This is some additional text that you can show when the "Read More" button is clicked. It provides
+                    more information about your blog or a brief introduction to your content. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque possimus, harum distinctio velit cum facere pariatur quam quibusdam soluta reprehenderit assumenda iure unde esse inventore. Totam repudiandae possimus facere eos.
+                </p>
+            </div>
+
+            <!-- Button to Expand/Collapse Text -->
+            <button id="read-more-button"
+                class="bg-blue-500 hover:bg-black-600 text-white py-2 px-6 rounded-full text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105">
+                Read More
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Blog Post Summaries -->
+<section class="py-10 mt-16">
+    <div class="container mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Blog Post Summary 1 -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-md">
+            <img src="https://img.freepik.com/free-vector/blogging-fun-content-creation-online-streaming-video-blog-young-girl-making-selfie-social-network-sharing-feedback-self-promotion-strategy-vector-isolated-concept-metaphor-illustration_335657-855.jpg" alt="Blog Post 1" class="w-full h-48 object-cover object-center">
+            <div class="p-6">
+                <h2 class="text-xl font-semibold mb-2">Blog 1</h2>
+                <p class="text-gray-600 text-sm mb-4">Published on September 1, 2023</p>
+                <p class="text-gray-700 mb-4">A short excerpt or teaser from the blog post. Lorem ipsum dolor sit
+                    amet... Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, quidem! Quam architecto aliquam ad quo. Eaque saepe suscipit ut magnam reiciendis facere sequi, delectus voluptatem earum, omnis at molestiae quidem?</p>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg overflow-hidden shadow-md">
+            <img src="https://img.freepik.com/free-vector/blogging-fun-content-creation-online-streaming-video-blog-young-girl-making-selfie-social-network-sharing-feedback-self-promotion-strategy-vector-isolated-concept-metaphor-illustration_335657-855.jpg"
+                alt="Blog Post 1" class="w-full h-48 object-cover object-center">
+            <div class="p-6">
+                <h2 class="text-xl font-semibold mb-2">Blog 2</h2>
+                <p class="text-gray-600 text-sm mb-4">Published on September 1, 2023</p>
+                <p class="text-gray-700 mb-4">A short excerpt or teaser from the blog post. Lorem ipsum dolor sit
+                    amet... Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, quidem! Quam architecto aliquam
+                    ad quo. Eaque saepe suscipit ut magnam reiciendis facere sequi, delectus voluptatem earum, omnis at
+                    molestiae quidem?</p>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg overflow-hidden shadow-md">
+            <img src="https://img.freepik.com/free-vector/blogging-fun-content-creation-online-streaming-video-blog-young-girl-making-selfie-social-network-sharing-feedback-self-promotion-strategy-vector-isolated-concept-metaphor-illustration_335657-855.jpg"
+                alt="Blog Post 1" class="w-full h-48 object-cover object-center">
+            <div class="p-6">
+                <h2 class="text-xl font-semibold mb-2">Blog 1</h2>
+                <p class="text-gray-600 text-sm mb-4">Published on September 1, 2023</p>
+                <p class="text-gray-700 mb-4">A short excerpt or teaser from the blog post. Lorem ipsum dolor sit
+                    amet... Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, quidem! Quam architecto aliquam
+                    ad quo. Eaque saepe suscipit ut magnam reiciendis facere sequi, delectus voluptatem earum, omnis at
+                    molestiae quidem?</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Blog Post Summary 1 -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-md">
+            <img src="https://img.freepik.com/free-vector/blogging-fun-content-creation-online-streaming-video-blog-young-girl-making-selfie-social-network-sharing-feedback-self-promotion-strategy-vector-isolated-concept-metaphor-illustration_335657-855.jpg"
+                alt="Blog Post 1" class="w-full h-48 object-cover object-center">
+            <div class="p-6">
+                <h2 class="text-xl font-semibold mb-2">Blog 1</h2>
+                <p class="text-gray-600 text-sm mb-4">Published on September 1, 2023</p>
+                <p class="text-gray-700 mb-4">A short excerpt or teaser from the blog post. Lorem ipsum dolor sit
+                    amet... Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, quidem! Quam architecto
+                    aliquam ad quo. Eaque saepe suscipit ut magnam reiciendis facere sequi, delectus voluptatem earum, omnis
+                    at molestiae quidem?</p>
+            </div>
+        </div>
+    
+        <div class="bg-white rounded-lg overflow-hidden shadow-md">
+            <img src="https://img.freepik.com/free-vector/blogging-fun-content-creation-online-streaming-video-blog-young-girl-making-selfie-social-network-sharing-feedback-self-promotion-strategy-vector-isolated-concept-metaphor-illustration_335657-855.jpg"
+                alt="Blog Post 1" class="w-full h-48 object-cover object-center">
+            <div class="p-6">
+                <h2 class="text-xl font-semibold mb-2">Blog 2</h2>
+                <p class="text-gray-600 text-sm mb-4">Published on September 1, 2023</p>
+                <p class="text-gray-700 mb-4">A short excerpt or teaser from the blog post. Lorem ipsum dolor sit
+                    amet... Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, quidem! Quam architecto
+                    aliquam
+                    ad quo. Eaque saepe suscipit ut magnam reiciendis facere sequi, delectus voluptatem earum, omnis at
+                    molestiae quidem?</p>
+            </div>
+        </div>
+    
+        <div class="bg-white rounded-lg overflow-hidden shadow-md">
+            <img src="https://img.freepik.com/free-vector/blogging-fun-content-creation-online-streaming-video-blog-young-girl-making-selfie-social-network-sharing-feedback-self-promotion-strategy-vector-isolated-concept-metaphor-illustration_335657-855.jpg"
+                alt="Blog Post 1" class="w-full h-48 object-cover object-center">
+            <div class="p-6">
+                <h2 class="text-xl font-semibold mb-2">Blog 1</h2>
+                <p class="text-gray-600 text-sm mb-4">Published on September 1, 2023</p>
+                <p class="text-gray-700 mb-4">A short excerpt or teaser from the blog post. Lorem ipsum dolor sit
+                    amet... Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, quidem! Quam architecto
+                    aliquam
+                    ad quo. Eaque saepe suscipit ut magnam reiciendis facere sequi, delectus voluptatem earum, omnis at
+                    molestiae quidem?</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Blog Post Summary 1 -->
+        <div class="bg-white rounded-lg overflow-hidden shadow-md">
+            <img src="https://img.freepik.com/free-vector/blogging-fun-content-creation-online-streaming-video-blog-young-girl-making-selfie-social-network-sharing-feedback-self-promotion-strategy-vector-isolated-concept-metaphor-illustration_335657-855.jpg"
+                alt="Blog Post 1" class="w-full h-48 object-cover object-center">
+            <div class="p-6">
+                <h2 class="text-xl font-semibold mb-2">Blog 1</h2>
+                <p class="text-gray-600 text-sm mb-4">Published on September 1, 2023</p>
+                <p class="text-gray-700 mb-4">A short excerpt or teaser from the blog post. Lorem ipsum dolor sit
+                    amet... Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, quidem! Quam architecto
+                    aliquam ad quo. Eaque saepe suscipit ut magnam reiciendis facere sequi, delectus voluptatem earum, omnis
+                    at molestiae quidem?</p>
+            </div>
+        </div>
+    
+        <div class="bg-white rounded-lg overflow-hidden shadow-md">
+            <img src="https://img.freepik.com/free-vector/blogging-fun-content-creation-online-streaming-video-blog-young-girl-making-selfie-social-network-sharing-feedback-self-promotion-strategy-vector-isolated-concept-metaphor-illustration_335657-855.jpg"
+                alt="Blog Post 1" class="w-full h-48 object-cover object-center">
+            <div class="p-6">
+                <h2 class="text-xl font-semibold mb-2">Blog 2</h2>
+                <p class="text-gray-600 text-sm mb-4">Published on September 1, 2023</p>
+                <p class="text-gray-700 mb-4">A short excerpt or teaser from the blog post. Lorem ipsum dolor sit
+                    amet... Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, quidem! Quam architecto
+                    aliquam
+                    ad quo. Eaque saepe suscipit ut magnam reiciendis facere sequi, delectus voluptatem earum, omnis at
+                    molestiae quidem?</p>
+            </div>
+        </div>
+    
+        <div class="bg-white rounded-lg overflow-hidden shadow-md">
+            <img src="https://img.freepik.com/free-vector/blogging-fun-content-creation-online-streaming-video-blog-young-girl-making-selfie-social-network-sharing-feedback-self-promotion-strategy-vector-isolated-concept-metaphor-illustration_335657-855.jpg"
+                alt="Blog Post 1" class="w-full h-48 object-cover object-center">
+            <div class="p-6">
+                <h2 class="text-xl font-semibold mb-2">Blog 1</h2>
+                <p class="text-gray-600 text-sm mb-4">Published on September 1, 2023</p>
+                <p class="text-gray-700 mb-4">A short excerpt or teaser from the blog post. Lorem ipsum dolor sit
+                    amet... Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, quidem! Quam architecto
+                    aliquam
+                    ad quo. Eaque saepe suscipit ut magnam reiciendis facere sequi, delectus voluptatem earum, omnis at
+                    molestiae quidem?</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Pagination Section -->
+<section class="py-6">
+    <div class="container mx-auto flex justify-center items-center space-x-4">
+        <a href="#"
+            class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105">
+            Previous Page
+        </a>
+        <div class="relative">
+            <span class="text-gray-700">Page 1 of 5</span>
+            <select
+                class="absolute inset-y-0 right-0 pr-6 bg-white border border-gray-300 rounded-full py-2 px-4 appearance-none text-gray-700">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <a href="#"
+            class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105">
+            Next Page
+        </a>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="bg-gray-900 text-white py-8">
+    <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+        <!-- Copyright Information -->
+        <p class="text-center md:text-left text-sm">&copy; 2023 My Blog. All rights reserved.</p>
+
+        <!-- Legal Pages Links -->
+        <div class="mt-4 md:mt-0 text-center md:text-left">
+            <a href="/privacy-policy.html" class="text-blue-400 hover:text-blue-300 text-sm px-2">Privacy Policy</a>
+            <span class="text-gray-400 mx-2">|</span>
+            <a href="/terms-of-service.html" class="text-blue-400 hover:text-blue-300 text-sm px-2">Terms of Service</a>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="mt-4 md:mt-0">
+            <a href="#" class="text-gray-400 hover:text-blue-400 mx-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path
+                        d="M14 2C8.48 2 4 6.48 4 12s4.48 10 10 10 10-4.48 10-10S19.52 2 14 2zm-1 15h-2v-5h2v5zm0-7h-2V5h2v5z" />
+                </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-blue-400 mx-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path
+                        d="M9.293 14.293a1 1 0 001.414 0L14 10.414l1.293 1.293a1 1 0 101.414-1.414l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 000 1.414z" />
+                    <path d="M14 16a6 6 0 100-12 6 6 0 000 12z" />
+                </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-blue-400 mx-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14V4a6 6 0 010 12z" />
+                </svg>
+            </a>
+        </div>
+    </div>
+</footer>
+
+
+<script src="/js/index.js"></script>
+</body>
+</html>

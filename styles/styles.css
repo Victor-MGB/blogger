@@ -1,0 +1,21 @@
+.headers{
+    background-color: black;
+}
+
+.headers li{
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+.headers a li:hover{
+    text-decoration: underline;
+    color: white;
+    border-bottom: 3px;
+}
+.aboutpage{
+background: linear-gradient(to right, #3494e6, #ec6ead);
+font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            padding: 100px;
+}
